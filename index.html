@@ -167,6 +167,62 @@
         
         <p id="final-text1"></p>
         <p id="final-text2"></p>
+        
+<!-- Вставьте перед закрывающим </div class="content"> -->
+<div style="width: 100%; text-align: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+  <a href="https://t.me/ваш_телеграм_ник" target="_blank" 
+     style="display: inline-flex; 
+            align-items: center; 
+            background: rgba(0, 132, 96, 0.1); 
+            color: #05D59C; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            border: 1px solid rgba(5, 213, 156, 0.3); 
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;">
+    
+    <!-- Эффект пульсации -->
+    <span style="position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(5, 213, 156, 0.2) 0%, rgba(5, 213, 156, 0) 70%);
+                transform: scale(0);
+                opacity: 0;
+                transition: transform 0.6s cubic-bezier(5, 213, 156, 0.2), opacity 0.3s ease;
+                pointer-events: none;">
+    </span>
+    
+    <!-- Иконка в зеленых тонах -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="margin-right: 10px; transition: transform 0.3s ease;">
+      <path fill="#05D59C" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.87 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.57-4.458c.538-.196 1.006.128.832.941z"/>
+    </svg>
+    Телеграм для обратной связи
+    
+    <!-- Анимации при наведении -->
+    <style>
+      a:hover {
+        background: rgba(0, 132, 96, 0.2) !important;
+        box-shadow: 0 4px 12px rgba(0, 132, 96, 0.15) !important;
+        color: #05D59C !important;
+        border-color: rgba(5, 213, 156, 0.2) !important;
+      }
+      a:hover span {
+        transform: scale(1.5) !important;
+        opacity: 1 !important;
+      }
+      a:hover svg {
+        transform: translateX(3px) !important;
+        filter: brightness(1.1) !important;
+      }
+    </style>
+  </a>
+</div>
+        
     </div>
     
     <script>
