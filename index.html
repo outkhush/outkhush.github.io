@@ -169,7 +169,8 @@
         <p id="final-text2"></p>
         
 <!-- Вставьте перед закрывающим </div class="content"> -->
-<div style="width: 100%; text-align: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+<div style="width: 100%; text-align: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <!-- Первая кнопка -->
   <a href="https://t.me/zeeratru" target="_blank" 
      style="display: inline-flex; 
             align-items: center; 
@@ -218,6 +219,64 @@
       a:hover svg {
         transform: translateX(3px) !important;
         filter: brightness(1.1) !important;
+      }
+    </style>
+  </a>
+
+  <!-- Вторая кнопка -->
+  <a href="https://t.me/ваш_телеграм_ник" target="_blank" 
+     style="display: inline-flex; 
+            align-items: center; 
+            background: rgba(0, 132, 96, 0.1); 
+            color: #05D59C; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            border: 1px solid rgba(5, 213, 156, 0.3); 
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;">
+    
+    <!-- Эффект пульсации -->
+    <span style="position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(5, 213, 156, 0.2) 0%, rgba(5, 213, 156, 0) 70%);
+                transform: scale(0);
+                opacity: 0;
+                transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+                pointer-events: none;">
+    </span>
+    
+    <!-- Ваше SVG изображение с адаптацией -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" style="margin-right: 10px; transition: transform 0.3s ease;">
+      <g transform="translate(0,256) scale(0.1,-0.1)" fill="#05D59C" stroke="none">
+        <path d="M0 1280 l0 -1280 1280 0 1280 0 0 1280 0 1280 -1280 0 -1280 0 0 -1280z m980 890 l0 -70 -192 -1 c-211 -1 -238 -6 -291 -56 -49 -46 -57 -87 -57 -287 l0 -176 -70 0 -70 0 0 208 c0 196 1 210 24 258 41 87 107 149 195 180 25 9 101 13 249 14 l212 0 0 -70z m1085 38 c60 -32 114 -87 146 -148 23 -43 24 -57 27 -262 l3 -218 -70 0 -71 0 0 176 c0 202 -8 238 -59 287 -53 51 -83 57 -282 57 l-179 0 0 71 0 70 218 -3 c213 -3 218 -3 267 -30z m-966 -204 c24 -10 50 -31 68 -56 l28 -41 3 -206 c4 -221 -2 -257 -43 -304 -46 -51 -75 -57 -298 -57 -194 0 -206 1 -247 23 -30 16 -51 37 -67 67 -22 41 -23 53 -23 250 0 197 1 209 23 250 16 30 37 51 67 67 41 22 54 23 246 23 162 0 212 -3 243 -16z m828 -5 c29 -14 52 -35 68 -63 25 -42 25 -47 25 -256 0 -209 0 -214 -25 -256 -16 -28 -39 -49 -68 -63 -40 -19 -61 -21 -247 -21 -186 0 -207 2 -247 21 -29 14 -52 35 -68 63 -25 42 -25 47 -25 256 0 209 1 214 25 255 16 28 39 50 67 64 40 19 59 21 247 21 187 0 208 -2 248 -21z m-828 -795 c24 -10 50 -31 68 -56 l28 -41 3 -206 c4 -221 -2 -257 -43 -304 -46 -51 -75 -57 -298 -57 -194 0 -206 1 -247 23 -30 16 -51 37 -67 67 -22 41 -23 53 -23 250 0 197 1 209 23 250 16 30 37 51 67 67 41 22 54 23 246 23 162 0 212 -3 243 -16z m519 -173 c6 -80 -1 -91 -57 -91 -74 0 -81 5 -81 60 0 78 4 81 74 78 l61 -3 3 -44z m276 33 c11 -27 6 -100 -6 -113 -10 -11 -10 -14 0 -18 16 -6 17 -123 0 -123 -9 0 -9 -3 0 -12 14 -14 16 -106 3 -126 -5 -9 -26 -12 -67 -10 l-59 3 0 72 c0 39 -3 75 -7 79 -5 4 -8 2 -8 -5 0 -8 -19 -11 -62 -9 l-63 3 0 65 0 65 58 3 c33 2 65 -2 72 -8 17 -14 32 7 16 23 -12 12 -15 85 -5 111 9 23 119 23 128 0z m-1452 -293 l3 -209 31 -38 c64 -79 61 -79 295 -82 l209 -3 0 -70 0 -70 -227 3 c-225 3 -229 3 -279 30 -57 30 -112 87 -146 150 -22 41 -23 56 -26 271 l-3 227 70 0 70 0 3 -209z m1796 -18 c-3 -225 -3 -229 -30 -279 -30 -57 -87 -112 -150 -146 -40 -22 -56 -23 -260 -26 l-218 -3 0 70 0 71 183 0 c201 0 246 11 291 67 39 50 44 81 45 281 l1 192 71 0 70 0 -3 -227z m-620 -20 c3 -58 1 -63 -21 -68 -13 -4 -43 -5 -68 -3 l-44 3 -3 44 c-2 25 -1 55 3 68 5 22 10 24 68 21 l62 -3 3 -62z"/>
+        <path d="M676 1864 c-13 -13 -16 -44 -16 -183 0 -150 2 -170 18 -184 16 -14 45 -17 190 -17 159 0 172 1 182 19 16 30 13 342 -4 364 -12 15 -33 17 -184 17 -142 0 -173 -3 -186 -16z"/>
+        <path d="M1496 1864 c-13 -13 -16 -44 -16 -183 0 -150 2 -170 18 -184 27 -24 342 -25 366 -1 13 13 16 44 16 183 0 150 -2 170 -18 184 -27 24 -342 25 -366 1z"/>
+        <path d="M676 1064 c-13 -13 -16 -44 -16 -183 0 -150 2 -170 18 -184 16 -14 45 -17 190 -17 159 0 172 1 182 19 16 30 13 342 -4 364 -12 15 -33 17 -184 17 -142 0 -173 -3 -186 -16z"/>
+      </g>
+    </svg>
+    Табличка для печати 
+    
+    <!-- Анимации при наведении -->
+    <style>
+      a:hover {
+        background: rgba(0, 132, 96, 0.2) !important;
+        box-shadow: 0 4px 12px rgba(0, 132, 96, 0.15) !important;
+        color: #05D59C !important;
+        border-color: rgba(5, 213, 156, 0.5) !important;
+      }
+      a:hover span {
+        transform: scale(1.5) !important;
+        opacity: 1 !important;
+      }
+      a:hover svg {
+        transform: translateX(3px) !important;
+        filter: brightness(1.15) drop-shadow(0 1px 2px rgba(5,213,156,0.3)) !important;
       }
     </style>
   </a>
@@ -383,3 +442,4 @@
     </script>
 </body>
 </html>
+
