@@ -431,12 +431,8 @@
         function updateContent(lang) {
             Object.keys(translations[lang]).forEach(key => {
                 const element = document.getElementById(key);
-                if(element) {
-                    if(key === 'surah3-translation') {
+                    if(element) {
                         element.innerHTML = translations[lang][key];
-                    } else {
-                        element.textContent = translations[lang][key];
-                    }
                 }
             });
         }
